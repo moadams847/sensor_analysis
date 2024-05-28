@@ -16,7 +16,7 @@ setup(
     description='A package for analyzing low-cost sensor and reference data',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/sensor_analysis',  # Update with your URL
+    url='https://github.com/moadams847/sensor_analysis',  
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
