@@ -40,8 +40,8 @@ def main(file_paths, date_formats, resample_freq='h', aggregation_func='mean'):
             merged_df_columns = merged_df.columns
             resampled_df_columns = resampled_df.columns
 
-            if len(resampled_df) >= 2:
-                metrics_graphs(resampled_df, resampled_df_columns, 2, 5)
+            if len(merged_df) >= 2:
+                metrics_graphs(merged_df, merged_df_columns, 1, 6)
             else:
                 print("Not enough columns to plot or calculate metrics.")
 
