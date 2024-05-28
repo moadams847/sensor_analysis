@@ -164,4 +164,5 @@ cython_debug/
 
 #ignore the following
 *.csv
+*.pypirc
 
