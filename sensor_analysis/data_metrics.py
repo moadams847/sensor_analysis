@@ -1,5 +1,37 @@
-from sklearn.metrics import mean_squared_error, mean_absolute_error
 import numpy as np
+import pandas as pd
+
+def mean_squared_error(col1, col2):
+    """
+    Calculate the Mean Squared Error between two columns in a DataFrame.
+
+    Parameters:
+    col1 (str): The name of the first column (actual values).
+    col2 (str): The name of the second column (predicted values).
+
+    Returns:
+    float: The Mean Squared Error between the two columns.
+    """
+    squared_errors = (col1 - col2) ** 2
+    mse = squared_errors.mean()
+    return mse
+
+
+def mean_absolute_error(col1, col2):
+    """
+    Calculate the Mean Absolute Error between two columns in a DataFrame.
+
+    Parameters:
+    col1 (str): The name of the first column (actual values).
+    col2 (str): The name of the second column (predicted values).
+
+    Returns:
+    float: The Mean Absolute Error between the two columns.
+    """
+    absolute_errors = abs(col1 - col2)
+    mae = absolute_errors.mean()
+    return mae
+
 
 def compute_rmse(df, col1, col2):
     return np.sqrt(mean_squared_error(df[col1], df[col2]))
